@@ -24,4 +24,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dice_image_breakfast" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <Button
+            android:id="@+id/milk"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@mipmap/dice11_foreground"/>
+        <Button
+            android:id="@+id/porridge"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@mipmap/dice2_foreground"/>
+        <Button
+            android:id="@+id/pancakes"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@mipmap/dice3_foreground"/>
+        <Button
+            android:id="@+id/eggs"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@mipmap/dice3_foreground"/>
+        <Button
+            android:id="@+id/cheese"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@mipmap/dice5_foreground"/>
+        <Button
+            android:id="@+id/muesli"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@mipmap/dice6_foreground"/>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
