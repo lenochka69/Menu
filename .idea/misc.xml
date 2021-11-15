@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/Lunch_foreground.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/activity_main.xml" value="0.2905982905982906" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_blank.xml" value="0.1921875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_breakfast.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_dinner.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_lunch.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/menu/menu_navigator.xml" value="0.12447916666666667" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/Lunch.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/Lunch_round.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/dice1.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/dice1_round.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/dice2.xml" value="0.1046875" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
