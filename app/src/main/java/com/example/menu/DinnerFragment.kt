@@ -12,8 +12,8 @@ import kotlin.random.Random
 private const val LAST_RANDOM_VALUE = "LAST_RANDOM_VALUE"
 
 class DinnerFragment : Fragment() {
-    private lateinit var diceImageView: ImageView
-    private lateinit var randomizeButton: Button
+    private lateinit var diceImageViewDinner: ImageView
+    private lateinit var randomizeButtonDinner: Button
 
     private var randomValue = 1
 
@@ -22,12 +22,12 @@ class DinnerFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_dinner, container, false)
-        diceImageView = view.findViewById(R.id.dice_image_dinner)
-        randomizeButton = view.findViewById(R.id.randomize_button_dinner)
+        diceImageViewDinner = view.findViewById(R.id.dice_image_dinner)
+        randomizeButtonDinner = view.findViewById(R.id.randomize_button_dinner)
         savedInstanceState?.let { randomValue = it.getInt(LAST_RANDOM_VALUE) }
         rollDice(randomValue)
 
-        randomizeButton.setOnClickListener {
+        randomizeButtonDinner.setOnClickListener {
             randomValue = Random.nextInt(1, 6)
             rollDice(randomValue)
         }
@@ -37,7 +37,7 @@ class DinnerFragment : Fragment() {
 
     //подкидывает кубик
     private fun rollDice(randomValue: Int) {
-        diceImageView.setImageResource(
+        diceImageViewDinner.setImageResource(
             when (randomValue) {
                 1 -> R.mipmap.dice11_foreground
                 2 -> R.mipmap.dice2_foreground

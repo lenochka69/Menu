@@ -14,9 +14,9 @@ import kotlin.random.Random
 private const val LAST_RANDOM_VALUE = "LAST_RANDOM_VALUE"
 
 class Breakfast : Fragment() {
-    //ранняя инициализация переменных для вью
-    private lateinit var diceImageView: ImageView
-    private lateinit var randomizeButton: Button
+
+    private lateinit var diceImageViewBreakfast: ImageView
+    private lateinit var randomizeButtonBreakfast: Button
     private lateinit var buttonMilK: Button
     private lateinit var buttonPorridge:Button
     private lateinit var buttonPancakes:Button
@@ -31,8 +31,8 @@ class Breakfast : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_breakfast, container, false)
-        diceImageView = view.findViewById(R.id.dice_image_breakfast)
-        randomizeButton = view.findViewById(R.id.randomize_button_breakfast)
+        diceImageViewBreakfast = view.findViewById(R.id.dice_image_breakfast)
+        randomizeButtonBreakfast = view.findViewById(R.id.randomize_button_breakfast)
         savedInstanceState?.let { randomValue = it.getInt(LAST_RANDOM_VALUE) }
         rollDice(randomValue)
 
@@ -80,7 +80,7 @@ class Breakfast : Fragment() {
         }
 
 
-        randomizeButton.setOnClickListener {
+        randomizeButtonBreakfast.setOnClickListener {
             randomValue = Random.nextInt(1, 6)
             rollDice(randomValue)
         }
@@ -89,9 +89,9 @@ class Breakfast : Fragment() {
     }
 
 
-    //подкидывает кубик
+
     private fun rollDice(randomValue: Int) {
-        diceImageView.setImageResource(
+        diceImageViewBreakfast.setImageResource(
             when (randomValue) {
                 1 -> R.mipmap.dice11_foreground
                 2 -> R.mipmap.dice2_foreground
@@ -103,7 +103,7 @@ class Breakfast : Fragment() {
             }
         )
     }
-    //сохраняет состояние
+
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt(LAST_RANDOM_VALUE, randomValue)
