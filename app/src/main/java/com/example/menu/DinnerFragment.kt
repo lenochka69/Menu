@@ -1,5 +1,7 @@
 package com.example.menu
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,6 +16,12 @@ private const val LAST_RANDOM_VALUE = "LAST_RANDOM_VALUE"
 class DinnerFragment : Fragment() {
     private lateinit var diceImageViewDinner: ImageView
     private lateinit var randomizeButtonDinner: Button
+    private lateinit var buttonBeef: Button
+    private lateinit var buttonPork:Button
+    private lateinit var buttonChickenDinner:Button
+    private lateinit var buttonTurkey:Button
+    private lateinit var buttonSeafood:Button
+    private lateinit var buttonVegetarianism: Button
 
     private var randomValue = 1
 
@@ -26,6 +34,49 @@ class DinnerFragment : Fragment() {
         randomizeButtonDinner = view.findViewById(R.id.randomize_button_dinner)
         savedInstanceState?.let { randomValue = it.getInt(LAST_RANDOM_VALUE) }
         rollDice(randomValue)
+
+        buttonBeef=view.findViewById(R.id.beef)
+        buttonPork = view.findViewById(R.id.pork)
+        buttonChickenDinner = view.findViewById(R.id.chicken_dinner)
+        buttonTurkey = view.findViewById(R.id.turkey)
+        buttonSeafood = view.findViewById(R.id.seafood)
+        buttonVegetarianism = view.findViewById(R.id.vegetarianism)
+
+        val linkBeef = Uri.parse("https://www.russianfood.com/recipes/bytype/?fid=74/")
+        val intentBeef = Intent(Intent.ACTION_VIEW,linkBeef)
+        buttonBeef.setOnClickListener {
+            startActivity(Intent(intentBeef))
+        }
+
+        val linkPork = Uri.parse("https://www.russianfood.com/recipes/bytype/?fid=297")
+        val intentPork = Intent(Intent.ACTION_VIEW,linkPork)
+        buttonPork.setOnClickListener {
+            startActivity(Intent(intentPork))
+        }
+
+        val linkChickenDinner = Uri.parse("https://www.russianfood.com/recipes/bytype/?fid=933")
+        val intentChickenDinner = Intent(Intent.ACTION_VIEW, linkChickenDinner)
+        buttonChickenDinner.setOnClickListener {
+            startActivity(Intent(intentChickenDinner))
+        }
+        val linkTurkey = Uri.parse("https://www.russianfood.com/recipes/bytype/?fid=938")
+        val intentTurkey = Intent(Intent.ACTION_VIEW,linkTurkey)
+        buttonTurkey.setOnClickListener {
+            startActivity(Intent(intentTurkey))
+        }
+
+        val linkSeafood = Uri.parse("https://www.russianfood.com/recipes/bytype/?fid=53")
+        val intentSeafood = Intent(Intent.ACTION_VIEW,linkSeafood)
+        buttonSeafood.setOnClickListener {
+            startActivity(Intent(intentSeafood))
+        }
+
+        val linkVegetarianism = Uri.parse("https://www.russianfood.com/recipes/bytype/?fid=216")
+        val intentVegetarianism = Intent(Intent.ACTION_VIEW, linkVegetarianism)
+        buttonVegetarianism.setOnClickListener {
+            startActivity(Intent(intentVegetarianism))
+        }
+
 
         randomizeButtonDinner.setOnClickListener {
             randomValue = Random.nextInt(1, 6)
@@ -49,8 +100,6 @@ class DinnerFragment : Fragment() {
             }
         )
     }
-
-    //сохраняет состояние
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt(LAST_RANDOM_VALUE, randomValue)

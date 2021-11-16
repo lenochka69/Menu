@@ -87,7 +87,6 @@ class LunchFragment : Fragment() {
         return view
     }
 
-    //подкидывает кубик
     private fun rollDice(randomValue: Int) {
         diceImageViewLunch.setImageResource(
             when (randomValue) {
@@ -102,7 +101,6 @@ class LunchFragment : Fragment() {
         )
     }
 
-    //сохраняет состояние
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt(LAST_RANDOM_VALUE, randomValue)

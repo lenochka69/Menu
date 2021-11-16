@@ -51,7 +51,7 @@
             android:id="@+id/chicken_soup"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@mipmap/dice3_foreground"/>
+            android:background="@mipmap/dice4_foreground"/>
         <Button
             android:id="@+id/kharcho"
             android:layout_width="65dp"

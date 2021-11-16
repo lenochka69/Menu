@@ -50,7 +50,7 @@
             android:id="@+id/eggs"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@mipmap/dice3_foreground"/>
+            android:background="@mipmap/dice4_foreground"/>
         <Button
             android:id="@+id/cheese"
             android:layout_width="65dp"
