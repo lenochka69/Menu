@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Breakfast">
+    tools:context=".Breakfast"
+    android:background="@mipmap/breakfast3_foreground">
 
     <ImageView
         android:id="@+id/dice_image_breakfast"
@@ -19,7 +20,7 @@
         android:id="@+id/randomize_button_breakfast"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/random"
+        android:text="Испытай удачу!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dice_image_breakfast" />
@@ -31,36 +32,42 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <Button
             android:id="@+id/milk"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@mipmap/dice11_foreground"/>
+            android:background="@mipmap/dice11_foreground" />
+
         <Button
             android:id="@+id/porridge"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@mipmap/dice2_foreground"/>
+            android:background="@mipmap/dice2_foreground" />
+
         <Button
             android:id="@+id/pancakes"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@mipmap/dice3_foreground"/>
+            android:background="@mipmap/dice3_foreground" />
+
         <Button
             android:id="@+id/eggs"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@mipmap/dice4_foreground"/>
+            android:background="@mipmap/dice4_foreground" />
+
         <Button
             android:id="@+id/cheese"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@mipmap/dice5_foreground"/>
+            android:background="@mipmap/dice5_foreground" />
+
         <Button
             android:id="@+id/muesli"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            android:background="@mipmap/dice6_foreground"/>
+            android:background="@mipmap/dice6_foreground" />
 
     </LinearLayout>
 

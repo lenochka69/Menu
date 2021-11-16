@@ -73,7 +73,7 @@ class LunchFragment : Fragment() {
             startActivity(Intent(intentKharcho))
         }
 
-        val linkFastfood = Uri.parse("https://yandex.ru/maps/2/saint-petersburg/chain/mcdonald/6003441/?from=tabbar&ll=30.382463%2C59.816431&sll=30.379514%2C59.807220&source=serp_navig&sspn=0.605621%2C0.175723&z=11")
+        val linkFastfood = Uri.parse("https://yandex.ru/maps/org/makdonalds/11319914475/")
         val intentFastfood = Intent(Intent.ACTION_VIEW, linkFastfood)
         buttonFastfood.setOnClickListener {
             startActivity(Intent(intentFastfood))

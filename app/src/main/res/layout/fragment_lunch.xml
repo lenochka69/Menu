@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".LunchFragment">
+    tools:context=".LunchFragment"
+    android:background="@mipmap/lunch4_foreground">
 
     <ImageView
         android:id="@+id/dice_image_lunch"
@@ -19,10 +20,11 @@
         android:id="@+id/randomize_button_lunch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/random"
+        android:text="Испытай удачу!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/dice_image_lunch" />
+        app:layout_constraintTop_toBottomOf="@id/dice_image_lunch"
+        />
 
 
     <LinearLayout
