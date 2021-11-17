@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private var dinnerFragment = DinnerFragment()
 
     private lateinit var bottomNavigationMenu: BottomNavigationView
-    private lateinit var userRecyclerView: RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -52,42 +52,18 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-        val bannerList:List<Banner> = listOf(
-            Banner(R.drawable.dinner_foreground,"Молоко"),
-            Banner(R.drawable.dinner_foreground,"Wfq")
-        )
-
-
-        userRecyclerView = findViewById(R.id.recyclerView)
-        userRecyclerView.layoutManager
-        LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
-        userRecyclerView.addItemDecoration(
-            DividerItemDecoration(
-                this,
-                DividerItemDecoration.VERTICAL
-            )
-        )
-        userRecyclerView.adapter = BannerAdapter (bannerList)
-
-
-
-        //восстановление состояния нижней навиагции
-        //если не сохранено то по дефолту выбрать R.id.number
         bottomNavigationMenu.selectedItemId =
             savedInstanceState?.getInt(LAST_SELECTED_ITEM) ?: R.id.breakfast
     }
 
-    //сохрнаим состояние последнего нажатого элемента нижней навигации
     override fun onSaveInstanceState(outState: Bundle) {
         outState.putInt(LAST_SELECTED_ITEM, bottomNavigationMenu.selectedItemId)
 
-        //сохраняем интсанцию конкретного фрагмента
         val fragment = supportFragmentManager.fragments.last()
         supportFragmentManager.putFragment(outState, fragment.javaClass.name, fragment)
         super.onSaveInstanceState(outState)
     }
 
-    //функция замены фрагментов с помощью supportFragmentManager
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager
             .beginTransaction()

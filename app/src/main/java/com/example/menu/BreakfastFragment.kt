@@ -26,6 +26,7 @@ class Breakfast : Fragment() {
     private lateinit var buttonCheese:Button
     private lateinit var buttonEggs:Button
     private lateinit var buttonMuesli: Button
+    private lateinit var userRecyclerView: RecyclerView
 
 
     private var randomValue = 1
@@ -83,7 +84,22 @@ class Breakfast : Fragment() {
             startActivity(Intent(intentMuesli))
         }
 
+        val bannerList:List<Banner> = listOf(
+            Banner(R.drawable.dinner_foreground,"Молоко"),
+            Banner(R.drawable.dinner_foreground,"Wfq")
+        )
 
+
+        userRecyclerView = view.findViewById(R.id.recyclerView)
+        userRecyclerView.layoutManager
+        LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
+        userRecyclerView.addItemDecoration(
+            DividerItemDecoration(
+                context,
+                DividerItemDecoration.VERTICAL
+            )
+        )
+        userRecyclerView.adapter = BannerAdapter (bannerList)
 
 
         randomizeButtonBreakfast.setOnClickListener {
