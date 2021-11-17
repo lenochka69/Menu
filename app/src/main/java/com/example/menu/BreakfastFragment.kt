@@ -9,6 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlin.random.Random
 
 private const val LAST_RANDOM_VALUE = "LAST_RANDOM_VALUE"
@@ -23,6 +26,7 @@ class Breakfast : Fragment() {
     private lateinit var buttonCheese:Button
     private lateinit var buttonEggs:Button
     private lateinit var buttonMuesli: Button
+
 
     private var randomValue = 1
 
@@ -78,6 +82,8 @@ class Breakfast : Fragment() {
         buttonMuesli.setOnClickListener {
             startActivity(Intent(intentMuesli))
         }
+
+
 
 
         randomizeButtonBreakfast.setOnClickListener {

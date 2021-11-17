@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DinnerFragment"
-    android:background="@mipmap/dinner2_foreground">
+    android:background="@color/papaya_whip">
 
     <ImageView
         android:id="@+id/dice_image_dinner"
@@ -20,6 +20,7 @@
         android:id="@+id/randomize_button_dinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="Испытай удачу!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +32,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
             android:id="@+id/beef"

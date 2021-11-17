@@ -13,4 +13,24 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.Menu.ButtonNavigator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        ...
+        <item name="bottomAppBarStyle">@style/Widget.App.BottomAppBar</item>
+     
+    </style>
+
+    <style name="Widget.App.BottomAppBar" parent="Widget.MaterialComponents.BottomAppBar.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomAppBar</item>
+    </style>
+
+
+
+    <style name="ThemeOverlay.App.BottomAppBar" parent="Theme.Menu.ButtonNavigator">
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorOnPrimary">@color/pink</item>
+
+    </style>
+
+
+
 </resources>

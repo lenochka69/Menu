@@ -3,6 +3,9 @@ package com.example.menu
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 private const val LAST_SELECTED_ITEM = "LAST_SELECTED_ITEM"
@@ -17,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private var dinnerFragment = DinnerFragment()
 
     private lateinit var bottomNavigationMenu: BottomNavigationView
-
+    private lateinit var userRecyclerView: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -48,6 +51,25 @@ class MainActivity : AppCompatActivity() {
             replaceFragment(fragment!!)
             true
         }
+
+        val bannerList:List<Banner> = listOf(
+            Banner(R.drawable.dinner_foreground,"Молоко"),
+            Banner(R.drawable.dinner_foreground,"Wfq")
+        )
+
+
+        userRecyclerView = findViewById(R.id.recyclerView)
+        userRecyclerView.layoutManager
+        LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false)
+        userRecyclerView.addItemDecoration(
+            DividerItemDecoration(
+                this,
+                DividerItemDecoration.VERTICAL
+            )
+        )
+        userRecyclerView.adapter = BannerAdapter (bannerList)
+
+
 
         //восстановление состояния нижней навиагции
         //если не сохранено то по дефолту выбрать R.id.number

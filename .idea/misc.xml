@@ -4,14 +4,22 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/Lunch_foreground.xml" value="0.1046875" />
-        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/activity_main.xml" value="0.2854368932038835" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/breakfast_foreground.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/button.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/dinner_foreground.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/milk.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/font/rubik.xml" value="0.11875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/breakfast_baner.xml" value="0.1921875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_blank.xml" value="0.1921875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_breakfast.xml" value="0.25" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_dinner.xml" value="0.1" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_lunch.xml" value="0.1" />
-        <entry key="..\:/Users/Public/Menu/app/src/main/res/menu/menu_navigator.xml" value="0.12447916666666667" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/menu/menu_navigator.xml" value="0.25" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/Lunch.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/Lunch_round.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/bb.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/bb_round.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/dice1.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/dice1_round.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/dice2.xml" value="0.1046875" />

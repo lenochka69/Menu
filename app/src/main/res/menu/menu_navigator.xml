@@ -2,6 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/breakfast"
+        android:enabled="true"
         android:icon="@drawable/breakfast_foreground"
         android:title="@string/breakfast" />
 
