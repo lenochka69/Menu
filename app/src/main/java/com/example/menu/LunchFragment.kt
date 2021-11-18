@@ -85,11 +85,12 @@ class LunchFragment : Fragment() {
 
 
         val bannerListLunch:List<BannerLunch> = listOf(
-            BannerLunch(R.mipmap.soup,"Супы"),
-            BannerLunch(R.mipmap.egg,"Яйца"),
-            BannerLunch(R.mipmap.meal,"Мясные блюда"),
-            BannerLunch(R.mipmap.panc,"Блинчики"),
-            BannerLunch(R.mipmap.chee,"Сыр и творожок"),
+            BannerLunch(R.drawable.soup_e,"Soup"),
+            BannerLunch(R.drawable.soup_ig,"Soup"),
+            BannerLunch(R.drawable.soup_o,"Soup"),
+            BannerLunch(R.drawable.soup_p,"Soup"),
+            BannerLunch(R.drawable.soup_u,"Soup"),
+            BannerLunch(R.drawable.fast,"Fast Food"),
         )
 
 

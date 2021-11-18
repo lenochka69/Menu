@@ -85,12 +85,12 @@ class Breakfast : Fragment() {
         }
 
         val bannerList:List<Banner> = listOf(
-            Banner(R.mipmap.meal,"Мясные блюда"),
-            Banner(R.mipmap.soup,"Супы"),
-            Banner(R.mipmap.panc,"Блинчики"),
-        Banner(R.mipmap.chee,"Сыр и творожок"),
-        Banner(R.mipmap.egg,"Яйца"),
-
+            Banner(R.drawable.kawa_r,"Кашка"),
+            Banner(R.drawable.moloko,"Молоко"),
+            Banner(R.drawable.syra,"Сыр и Творог"),
+            Banner(R.drawable.yaichnica_glazunya,"Яйца"),
+            Banner(R.drawable.fresh,"Мюсли"),
+            Banner(R.drawable.pancake_raspberry_plate,"Блинчики"),
         )
 
 

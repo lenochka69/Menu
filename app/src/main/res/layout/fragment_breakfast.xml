@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Breakfast"
-    android:background="@color/misty_rose">
+    android:background="@drawable/morni"
+    >
 
     <ImageView
         android:id="@+id/dice_image_breakfast"
@@ -39,37 +40,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/milk"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@mipmap/dice11_foreground" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/porridge"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@mipmap/dice2_foreground" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/pancakes"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@mipmap/dice3_foreground" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/eggs"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@mipmap/dice4_foreground" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/cheese"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@mipmap/dice5_foreground" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/muesli"
             android:layout_width="65dp"
             android:layout_height="65dp"

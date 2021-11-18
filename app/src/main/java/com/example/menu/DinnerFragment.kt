@@ -81,11 +81,12 @@ class DinnerFragment : Fragment() {
             startActivity(Intent(intentVegetarianism))
         }
         val bannerListDinner:List<BannerDinner> = listOf(
-            BannerDinner(R.mipmap.soup,"Супы"),
-            BannerDinner(R.mipmap.egg,"Яйца"),
-            BannerDinner(R.mipmap.meal,"Мясные блюда"),
-            BannerDinner(R.mipmap.panc,"Блинчики"),
-            BannerDinner(R.mipmap.chee,"Сыр и творожок"),
+            BannerDinner(R.drawable.meal_r,"Говядина"),
+            BannerDinner(R.drawable.final1200,"Курица"),
+            BannerDinner(R.drawable.tyr,"Индейка"),
+            BannerDinner(R.drawable.moreprodukty,"Морепродукты"),
+            BannerDinner(R.drawable.vegan,"Веган"),
+            BannerDinner(R.drawable.svinina,"Свинина"),
         )
 
 

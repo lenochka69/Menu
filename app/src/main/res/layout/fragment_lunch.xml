@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LunchFragment"
-    android:background="@color/silver">
+    android:background="@drawable/lunch_two">
 
     <ImageView
         android:id="@+id/dice_image_lunch"
@@ -35,32 +35,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/borscht"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@mipmap/dice11_foreground"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/fish_soup"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@mipmap/dice2_foreground"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/mushroom_soup"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@mipmap/dice3_foreground"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/chicken_soup"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@mipmap/dice4_foreground"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/kharcho"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:background="@mipmap/dice5_foreground"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/fast_food"
             android:layout_width="65dp"
             android:layout_height="65dp"

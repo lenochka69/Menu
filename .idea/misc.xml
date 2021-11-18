@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/Lunch_foreground.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/breakfast_foreground.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/button.xml" value="0.1046875" />
@@ -10,11 +11,11 @@
         <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/milk.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/font/rubik.xml" value="0.11875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/breakfast_baner.xml" value="0.5" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/breakfast_baner.xml" value="0.16" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/dinner_banner.xml" value="0.1921875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_blank.xml" value="0.1921875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_breakfast.xml" value="0.25" />
-        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_dinner.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_dinner.xml" value="0.18" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_lunch.xml" value="0.1" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/lunch_banner.xml" value="0.1921875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/menu/menu_navigator.xml" value="0.25" />
