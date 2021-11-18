@@ -9,6 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlin.random.Random
 
 private const val LAST_RANDOM_VALUE = "LAST_RANDOM_VALUE"
@@ -22,6 +25,7 @@ class DinnerFragment : Fragment() {
     private lateinit var buttonTurkey:Button
     private lateinit var buttonSeafood:Button
     private lateinit var buttonVegetarianism: Button
+    private lateinit var userRecyclerDinner: RecyclerView
 
     private var randomValue = 1
 
@@ -76,6 +80,27 @@ class DinnerFragment : Fragment() {
         buttonVegetarianism.setOnClickListener {
             startActivity(Intent(intentVegetarianism))
         }
+        val bannerListDinner:List<BannerDinner> = listOf(
+            BannerDinner(R.mipmap.soup,"Супы"),
+            BannerDinner(R.mipmap.egg,"Яйца"),
+            BannerDinner(R.mipmap.meal,"Мясные блюда"),
+            BannerDinner(R.mipmap.panc,"Блинчики"),
+            BannerDinner(R.mipmap.chee,"Сыр и творожок"),
+        )
+
+
+
+
+        userRecyclerDinner = view.findViewById(R.id.recyclerView_dinner)
+        userRecyclerDinner.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
+        userRecyclerDinner.addItemDecoration(
+            DividerItemDecoration(
+                context,
+                DividerItemDecoration.VERTICAL
+            )
+        )
+        userRecyclerDinner.adapter = BannerAdapterDinner(bannerListDinner)
 
 
         randomizeButtonDinner.setOnClickListener {

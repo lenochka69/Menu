@@ -85,13 +85,17 @@ class Breakfast : Fragment() {
         }
 
         val bannerList:List<Banner> = listOf(
-            Banner(R.drawable.dinner_foreground,"Молоко"),
-            Banner(R.drawable.dinner_foreground,"Wfq")
+            Banner(R.mipmap.meal,"Мясные блюда"),
+            Banner(R.mipmap.soup,"Супы"),
+            Banner(R.mipmap.panc,"Блинчики"),
+        Banner(R.mipmap.chee,"Сыр и творожок"),
+        Banner(R.mipmap.egg,"Яйца"),
+
         )
 
 
         userRecyclerView = view.findViewById(R.id.recyclerView)
-        userRecyclerView.layoutManager
+        userRecyclerView.layoutManager =
         LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
         userRecyclerView.addItemDecoration(
             DividerItemDecoration(

@@ -10,19 +10,28 @@
         <entry key="..\:/Users/Public/Menu/app/src/main/res/drawable/milk.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/font/rubik.xml" value="0.11875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/breakfast_baner.xml" value="0.1921875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/breakfast_baner.xml" value="0.5" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/dinner_banner.xml" value="0.1921875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_blank.xml" value="0.1921875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_breakfast.xml" value="0.25" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_dinner.xml" value="0.1" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/fragment_lunch.xml" value="0.1" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/layout/lunch_banner.xml" value="0.1921875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/menu/menu_navigator.xml" value="0.25" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/Lunch.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/Lunch_round.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/Pancakes.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/Pancakes_round.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/bb.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/bb_round.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/breakfast3.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/dice1.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/dice1_round.xml" value="0.1046875" />
         <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/dice2.xml" value="0.1046875" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/lunch2.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/lunch2_round.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/milk.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Public/Menu/app/src/main/res/mipmap-anydpi-v26/milk_round.xml" value="0.20833333333333334" />
       </map>
     </option>
   </component>
